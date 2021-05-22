@@ -29,51 +29,67 @@
             android:orientation="vertical">
 
 
-            <TextView
-                android:id="@+id/textView3"
+            <ImageView
+                android:id="@+id/imageView3"
                 android:layout_width="match_parent"
-                android:layout_height="90dp"
-                android:text="@string/app_sign_up" />
+                android:layout_height="112dp"
+                app:srcCompat="@drawable/curequickly"
+                tools:ignore="ContentDescription" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName2"
+                android:id="@+id/firstName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:autofillHints=""
                 android:ems="10"
                 android:hint="@string/enter_first_name"
-                android:inputType="textPersonName"
-                android:text="@string/enter_first_name"
-                android:autofillHints="" />
+                android:inputType="textPersonName" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName3"
+                android:id="@+id/lastName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:autofillHints=""
                 android:ems="10"
                 android:hint="@string/enter_last_name"
-                android:inputType="textPersonName"
-                android:text="@string/enter_last_name"
-                android:autofillHints="" />
+                android:inputType="textPersonName" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName4"
+                android:id="@+id/mobileNum"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:autofillHints=""
                 android:ems="10"
-                android:hint="@string/enter_email"
-                android:inputType="textPersonName"
-                android:text="@string/enter_email"
-                android:textColorHint="#08FFFFFF"
-                android:autofillHints="" />
+                android:hint="@string/mobile_number"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/emailId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/email_id"
+                android:inputType="textEmailAddress"
+                />
+
+            <EditText
+                android:id="@+id/govtId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/govt_id"
+                android:inputType="textPersonName" />
 
             <EditText
                 android:id="@+id/firstPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:autofillHints=""
                 android:ems="10"
                 android:hint="@string/enter_password"
-                android:inputType="textPassword"
-                android:autofillHints="" />
+                android:inputType="textPassword" />
 
             <EditText
                 android:id="@+id/confirmPassword3"
