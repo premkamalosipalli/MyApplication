@@ -1,100 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobileNum"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    >
+    tools:context=".MainActivity">
 
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
-        android:layout_width="416dp"
-        android:layout_height="700dp"
-        android:layout_margin="30dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginRight="30dp"
-        android:background="#d3d3d3"
-        app:cardCornerRadius="30dp"
-        app:cardElevation="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        >
+        app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            >
+            android:layout_height="match_parent">
 
             <ImageView
                 android:id="@+id/imageView"
-                android:layout_width="401dp"
+                android:layout_width="420dp"
                 android:layout_height="0dp"
-                android:layout_marginStart="1dp"
-                android:layout_marginLeft="1dp"
-                android:layout_marginEnd="1dp"
-                android:layout_marginRight="1dp"
-                android:layout_marginBottom="145dp"
-                app:layout_constraintBottom_toTopOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.285"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="308dp"
+                app:layout_constraintBottom_toTopOf="@+id/gotoSignUp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/curequickly"
-                tools:ignore="ContentDescription"
-                />
+                tools:ignore="ContentDescription" />
 
             <EditText
-                android:id="@+id/phonenumber"
-                android:layout_width="251dp"
-                android:layout_height="50dp"
-                android:layout_marginBottom="237dp"
-                android:autofillHints=""
+                android:id="@+id/phoneNumber"
+                android:layout_width="258dp"
+                android:layout_height="67dp"
+                android:layout_marginBottom="13dp"
                 android:ems="10"
-                android:hint="Mobile Number"
+                android:hint="@string/mobile_number"
+                android:importantForAutofill="no"
                 android:inputType="phone"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/password"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.481"
-                app:layout_constraintStart_toStartOf="@+id/imageView"
-                app:layout_constraintTop_toBottomOf="@+id/imageView"
-                />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
             <EditText
                 android:id="@+id/password"
-                android:layout_width="250dp"
-                android:layout_height="46dp"
-                android:autofillHints=""
+                android:layout_width="259dp"
+                android:layout_height="56dp"
+                android:layout_marginBottom="337dp"
                 android:ems="10"
-                android:hint="Password"
+                android:hint="@string/password"
+                android:importantForAutofill="no"
                 android:inputType="textPassword"
-                android:orientation="horizontal"
-                android:textColor="#F714257A"
-                app:layout_constraintBottom_toBottomOf="@id/imageView"
-                app:layout_constraintStart_toStartOf="@id/imageView"
-                tools:ignore="MissingConstraints"
-                />
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/phoneNumber"
+                app:layout_constraintTop_toBottomOf="@+id/phoneNumber" />
 
             <Button
                 android:id="@+id/gotoSignIn"
-                android:layout_width="214dp"
-                android:layout_height="39dp"
-                android:layout_marginTop="32dp"
-                android:autofillHints=""
-                android:ems="10"
+                android:layout_width="208dp"
+                android:layout_height="66dp"
+                android:layout_marginBottom="235dp"
                 android:text="@string/sign_in"
-                app:layout_constraintBottom_toBottomOf="@id/imageView"
-                app:layout_constraintEnd_toEndOf="@id/imageView"
-                app:layout_constraintHorizontal_bias="0.779"
-                app:layout_constraintStart_toStartOf="@id/imageView"
-                app:layout_constraintTop_toBottomOf="@+id/password"
-                />
+                app:backgroundTint="#479EE3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/password" />
+
+            <TextView
+                android:id="@+id/haveNoAccount"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginBottom="142dp"
+                android:text="@string/don_t_have_account"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/gotoSignUp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gotoSignIn"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <Button
+                android:id="@+id/gotoSignUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="74dp"
+                android:layout_marginRight="74dp"
+                android:layout_marginBottom="139dp"
+                android:text="@string/sign_up"
+                android:textColor="#0421C5"
+                app:backgroundTint="#C6E6E4E4"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/haveNoAccount"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
