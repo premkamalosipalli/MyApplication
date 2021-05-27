@@ -67,10 +67,6 @@ class SignUp : AppCompatActivity() {
             firstName.requestFocus()
             isValid=false
         }
-        else{
-            firstName.error=""
-            isValid=true
-        }
         if(lastName.text.toString().isEmpty()){
             lastName.error="Please Enter the Last Name"
             lastName.requestFocus()
@@ -113,9 +109,13 @@ class SignUp : AppCompatActivity() {
         }
 
         if(isValid){
+            Toast.makeText(this,"User SignUp Successful",Toast.LENGTH_LONG).show()
             val intent: Intent = Intent(applicationContext, MainActivity::class.java)
 
             startActivity(intent)
+
+        }else{
+            Toast.makeText(this,"User SignUp Failed",Toast.LENGTH_LONG).show()
         }
 
         /*var firstName=firstName.text.toString()

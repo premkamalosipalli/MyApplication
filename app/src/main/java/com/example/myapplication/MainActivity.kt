@@ -63,12 +63,15 @@ class MainActivity : AppCompatActivity() {
             isValid=false
         }
         if(isValid) {
-            if (userdata.mobileNumber === "8978892848" &&
-                userdata.confirmPassword === "123456"
+            if (mobileNumber.text.toString() == "8978892848" &&
+                password.text.toString() == "123456"
             ) {
+                Toast.makeText(this,"User LogIn Successful",Toast.LENGTH_LONG).show()
                 val intent: Intent = Intent(applicationContext, Welcome::class.java)
 
                 startActivity(intent)
+            }else{
+                Toast.makeText(this,"User LogIn Failed",Toast.LENGTH_LONG).show()
             }
         }
     }
