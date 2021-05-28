@@ -27,8 +27,8 @@ class SignUp : AppCompatActivity() {
 
     private lateinit var signIn: Button;
 
-    private lateinit var userdata:UserData
     private var isValid:Boolean=true
+
 
 
 
@@ -48,7 +48,7 @@ class SignUp : AppCompatActivity() {
         signUp=findViewById(R.id.registered)
         signUp.setOnClickListener{
 
-                view->createUser()
+            createUser()
         }
 
         signIn=findViewById(R.id.signIn)
@@ -109,8 +109,16 @@ class SignUp : AppCompatActivity() {
         }
 
         if(isValid){
+            var firstName=firstName.text.toString()
+            var mobileNumber=mobileNumber.text.toString()
+            var confirmPassword=confirmPassword.text.toString()
+
             Toast.makeText(this,"User SignUp Successful",Toast.LENGTH_LONG).show()
             val intent: Intent = Intent(applicationContext, MainActivity::class.java)
+
+            intent.putExtra("name",firstName)
+            intent.putExtra("mobileNumber",mobileNumber)
+            intent.putExtra("password",confirmPassword)
 
             startActivity(intent)
 

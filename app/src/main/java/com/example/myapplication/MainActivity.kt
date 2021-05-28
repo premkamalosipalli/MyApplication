@@ -1,10 +1,8 @@
 package com.example.myapplication
 
-import android.content.ContentValues.TAG
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.util.Patterns
 import android.widget.Button
 import android.widget.EditText
@@ -20,7 +18,6 @@ class MainActivity : AppCompatActivity() {
     private lateinit var signIn: Button;
     private lateinit var signUp: Button;
 
-    private lateinit var userdata:UserData
     private var isValid:Boolean=true
 
 
@@ -34,7 +31,7 @@ class MainActivity : AppCompatActivity() {
         signIn=findViewById(R.id.gotoSignIn)
 
         signIn.setOnClickListener{
-            view->loginUser()
+            loginUser()
         }
 
         signUp=findViewById(R.id.gotoSignUp)
@@ -52,23 +49,27 @@ class MainActivity : AppCompatActivity() {
             mobileNumber.requestFocus()
             isValid=false
         }
-        /*if(!Patterns.PHONE.matcher(mobileNumber.text.toString()).matches()){
+        if(!Patterns.PHONE.matcher(mobileNumber.text.toString()).matches()){
             mobileNumber.error="Please Enter valid Mobile Number"
             mobileNumber.requestFocus()
             isValid=false
-        }*/
+        }
         if(password.text.toString().isEmpty()) {
             password.error = "Please Enter confirmation password"
             password.requestFocus()
             isValid=false
         }
         if(isValid) {
-            if (mobileNumber.text.toString() == "8978892848" &&
-                password.text.toString() == "123456"
+            var intent:Intent=intent
+            var firstName=intent.getStringExtra("name")
+            var phoneNumber=intent.getStringExtra("mobileNumber")
+            var confirmPassword=intent.getStringExtra("password")
+            if (mobileNumber.text.toString() == phoneNumber &&
+                password.text.toString() == confirmPassword
             ) {
                 Toast.makeText(this,"User LogIn Successful",Toast.LENGTH_LONG).show()
                 val intent: Intent = Intent(applicationContext, Welcome::class.java)
-
+                intent.putExtra("name",firstName)
                 startActivity(intent)
             }else{
                 Toast.makeText(this,"User LogIn Failed",Toast.LENGTH_LONG).show()
