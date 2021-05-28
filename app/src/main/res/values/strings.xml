@@ -30,4 +30,12 @@
     <string name="name">Name</string>
     <string name="first_name">First Name</string>
     <string name="have_an_account">Have An Account ?</string>
+    <string name="please_take_the_following_survey_and_select_the_options_according_to_the_symptoms_based_on_the_symptoms_that_you_have_selected_we_will_inform_you_whether_you_are_infected_by_covid_19_or_not">Please take the following survey and select the options according to the symptoms. Based on the symptoms that you have selected we will inform you whether you are infected by covid 19 or not.</string>
+    <string name="do_you_have_following_symptoms">Do you have following Symptoms?</string>
+    <string name="cold">cold</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="fever">Fever</string>
+    <string name="cough">Cough</string>
+    <string name="submit">SUBMIT</string>
 </resources>

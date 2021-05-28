@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-=======
-<androidx.constraintlayout.widget.ConstraintLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
->>>>>>> origin/master
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-<<<<<<< HEAD
     tools:context=".TakeSurvey">
 
     <LinearLayout
@@ -33,7 +28,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="@string/please_take_the_following_survey_and_select_the_options_according_to_your_symptoms_based_on_the_symptoms_that_you_have_selected_we_will_inform_you_whether_you_are_infected_by_covid_19_or_not"
+            android:text="@string/please_take_the_following_survey_and_select_the_options_according_to_the_symptoms_based_on_the_symptoms_that_you_have_selected_we_will_inform_you_whether_you_are_infected_by_covid_19_or_not"
             android:textColor="@color/black"
             android:textSize="24sp" />
 
@@ -42,6 +37,7 @@
             android:layout_width="match_parent"
             android:layout_height="100sp"
             android:gravity="center"
+            android:hint="@string/do_you_have_following_symptoms"
             android:text="@string/do_you_have_following_symptoms"
             android:textSize="24sp" />
 
@@ -145,10 +141,5 @@
         </LinearLayout>
 
     </LinearLayout>
-
-=======
-    tools:context=".TakeSurvey"
-    >
->>>>>>> origin/master
 
 </androidx.constraintlayout.widget.ConstraintLayout>
