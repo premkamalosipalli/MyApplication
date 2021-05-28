@@ -8,14 +8,14 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.database.*
+//import com.google.firebase.database.*
 
 
 class SignUp : AppCompatActivity() {
 
     private var mFirebaseAuthAuth: FirebaseAuth? = null
-    private lateinit var fireBaseDataBase: FirebaseDatabase
-    private lateinit var reference: DatabaseReference
+    //private lateinit var fireBaseDataBase: FirebaseDatabase
+    //private lateinit var reference: DatabaseReference
     private lateinit var firstName:EditText
     private lateinit var lastName:EditText
     private lateinit var mobileNumber:EditText
