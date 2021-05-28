@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">Cure Quickly</string>
     <string name="actitvity_main">Actitvity Main</string>
     <string name="button">Button</string>
     <string name="first_fragment">First Fragment</string>
