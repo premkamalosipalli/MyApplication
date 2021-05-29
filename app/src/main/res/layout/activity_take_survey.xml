@@ -25,7 +25,7 @@
 
         <TextView
             android:id="@+id/description"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="@string/please_take_the_following_survey_and_select_the_options_according_to_the_symptoms_based_on_the_symptoms_that_you_have_selected_we_will_inform_you_whether_you_are_infected_by_covid_19_or_not"
@@ -35,7 +35,7 @@
         <TextView
             android:id="@+id/symptoms"
             android:layout_width="match_parent"
-            android:layout_height="100sp"
+            android:layout_height="78dp"
             android:gravity="center"
             android:hint="@string/do_you_have_following_symptoms"
             android:text="@string/do_you_have_following_symptoms"
@@ -43,7 +43,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="100sp"
+            android:layout_height="79dp"
             android:gravity="center"
             android:orientation="horizontal">
 
@@ -72,7 +72,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="100sp"
+            android:layout_height="73dp"
             android:gravity="center"
             android:orientation="horizontal">
 
@@ -101,7 +101,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="100sp"
+            android:layout_height="79dp"
             android:gravity="center"
             android:orientation="horizontal">
 

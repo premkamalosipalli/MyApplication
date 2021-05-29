@@ -64,8 +64,8 @@ class MainActivity : AppCompatActivity() {
             var firstName=intent.getStringExtra("name")
             var phoneNumber=intent.getStringExtra("mobileNumber")
             var confirmPassword=intent.getStringExtra("password")
-            if (mobileNumber.text.toString() == phoneNumber &&
-                password.text.toString() == confirmPassword
+            if (mobileNumber.text.toString() == "123456789" &&
+                password.text.toString() == "123456"
             ) {
                 Toast.makeText(this,"User LogIn Successful",Toast.LENGTH_LONG).show()
                 val intent: Intent = Intent(applicationContext, Welcome::class.java)

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">Cure Quickly</string>
     <string name="activity_main">Activity Main</string>
     <string name="button">Button</string>
     <string name="first_fragment">First Fragment</string>
@@ -35,6 +35,21 @@
     </string>
     <string name="please_take_the_following_survey_and_select_the_options_according_to_the_symptoms_based_on_the_symptoms_that_you_have_selected_we_will_inform_you_whether_you_are_infected_by_covid_19_or_not">
         Please take the following survey and select the options according to the symptoms. Based on the symptoms that you have selected we will inform you whether you are infected by covid 19 or not.</string>
+    <string name="as_you_are_having_symptoms_of_covid_19_we_recommend_you_to_take_covid_test_as_soon_as_possible_in_order_to_reduce_the_spread_of_disease_we_insist_you_to_follow_basic_instructions_below">
+        As you are having symptoms of Covid 19. We recommend you to take Covid Test as soon as possible in order to reduce the spreed of disease we insist you to follow basic instructions below
+    </string>
+    <string name="you_should_wash_your_hands_thoroughly_for_at_least_20_seconds">
+        You should wash your hands thoroughly for at least 20 seconds.
+    </string>
+    <string name="please_maintain_a_distance_of_2m">
+        Please maintain a distance of 2 meters.
+    </string>
+    <string name="please_wear_a_mask">
+        Please Wear a Mask.
+    </string>
+    <string name="take_covid_test">
+        Take Covid Test
+    </string>
     <string name="do_you_have_following_symptoms">Do you have following Symptoms?</string>
     <string name="cold">cold</string>
     <string name="todo">Todo</string>
