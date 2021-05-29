@@ -65,76 +65,77 @@
                     android:id="@+id/firstName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
                     android:ems="10"
                     android:hint="@string/enter_first_name"
-                    android:inputType="textPersonName"
                     android:importantForAutofill="no"
-                    />
+                    android:inputType="textPersonName" />
 
                 <EditText
                     android:id="@+id/lastName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
                     android:ems="10"
                     android:hint="@string/enter_last_name"
-                    android:inputType="textPersonName"
                     android:importantForAutofill="no"
-                    />
+                    android:inputType="textPersonName" />
 
                 <EditText
                     android:id="@+id/mobileNumber"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
                     android:ems="10"
                     android:hint="@string/mobile_number"
-                    android:inputType="phone"
                     android:importantForAutofill="no"
-                    />
+                    android:inputType="phone" />
 
                 <EditText
                     android:id="@+id/emailId"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
                     android:ems="10"
                     android:hint="@string/enter_email"
-                    android:inputType="textEmailAddress"
                     android:importantForAutofill="no"
-                    />
+                    android:inputType="textEmailAddress" />
 
                 <EditText
                     android:id="@+id/govtId"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
                     android:ems="10"
                     android:hint="@string/govt_id"
-                    android:inputType="textPersonName"
                     android:importantForAutofill="no"
-                    />
+                    android:inputType="textPersonName" />
 
                 <EditText
                     android:id="@+id/firstPassword"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
                     android:ems="10"
                     android:hint="@string/enter_password"
-                    android:inputType="textPassword"
                     android:importantForAutofill="no"
-                    />
+                    android:inputType="textPassword" />
 
                 <EditText
                     android:id="@+id/confirmPassword"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
                     android:ems="10"
                     android:hint="@string/confirm_password"
-                    android:inputType="textPassword"
                     android:importantForAutofill="no"
-                    />
+                    android:inputType="textPassword" />
 
                 <Button
                     android:id="@+id/registered"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
                     android:text="@string/sign_up"
                     app:backgroundTint="#479EE3" />
 
@@ -147,21 +148,22 @@
                     <TextView
                         android:id="@+id/textView"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5sp"
                         android:layout_weight="1"
+                        android:gravity="center"
                         android:text="@string/have_an_account"
-                        android:textSize="20sp"
-                        />
+                        android:textSize="20sp" />
 
                     <Button
                         android:id="@+id/signIn"
-                        android:layout_width="4dp"
-                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5sp"
                         android:layout_weight="1"
                         android:text="@string/sign_in"
                         android:textColor="#3F51B5"
-                        app:backgroundTint="@color/white"
-                        />
+                        app:backgroundTint="@color/white" />
                 </LinearLayout>
             </LinearLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>

@@ -11,12 +11,7 @@
         android:id="@+id/linearLayout2"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginLeft="1dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginRight="1dp"
-        android:layout_marginBottom="1dp"
+        android:layout_margin="5sp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -27,6 +22,7 @@
             android:id="@+id/description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="5sp"
             android:gravity="center"
             android:text="@string/please_take_the_following_survey_and_select_the_options_according_to_the_symptoms_based_on_the_symptoms_that_you_have_selected_we_will_inform_you_whether_you_are_infected_by_covid_19_or_not"
             android:textColor="@color/black"
@@ -36,6 +32,7 @@
             android:id="@+id/symptoms"
             android:layout_width="match_parent"
             android:layout_height="78dp"
+            android:layout_margin="5sp"
             android:gravity="center"
             android:hint="@string/do_you_have_following_symptoms"
             android:text="@string/do_you_have_following_symptoms"
@@ -50,8 +47,10 @@
             <TextView
                 android:id="@+id/cold"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="5sp"
                 android:layout_weight="2"
+                android:gravity="center"
                 android:text="@string/cold"
                 android:textSize="18sp" />
 
@@ -66,16 +65,16 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="@string/yes"
-                    android:onClick="onColdRadioButtonClicked"/>
+                    android:onClick="onColdRadioButtonClicked"
+                    android:text="@string/yes" />
 
                 <RadioButton
                     android:id="@+id/cold_no"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="@string/no"
-                    android:onClick="onColdRadioButtonClicked"/>
+                    android:onClick="onColdRadioButtonClicked"
+                    android:text="@string/no" />
             </RadioGroup>
 
         </LinearLayout>
@@ -89,8 +88,10 @@
             <TextView
                 android:id="@+id/fever"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="5sp"
                 android:layout_weight="2"
+                android:gravity="center"
                 android:text="@string/fever"
                 android:textSize="18sp" />
 
@@ -99,21 +100,22 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:orientation="horizontal">
+
                 <RadioButton
                     android:id="@+id/fever_yes"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="@string/yes"
-                    android:onClick="onFeverRadioButtonClicked"/>
+                    android:onClick="onFeverRadioButtonClicked"
+                    android:text="@string/yes" />
 
                 <RadioButton
                     android:id="@+id/fever_no"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="@string/no"
-                    android:onClick="onFeverRadioButtonClicked"/>
+                    android:onClick="onFeverRadioButtonClicked"
+                    android:text="@string/no" />
             </RadioGroup>
 
         </LinearLayout>
@@ -127,8 +129,10 @@
             <TextView
                 android:id="@+id/cough"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="5sp"
                 android:layout_weight="2"
+                android:gravity="center"
                 android:text="@string/cough"
                 android:textSize="18sp" />
 
@@ -137,21 +141,22 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:orientation="horizontal">
+
                 <RadioButton
                     android:id="@+id/cough_yes"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="@string/yes"
-                    android:onClick="onCoughRadioButtonClicked"/>
+                    android:onClick="onCoughRadioButtonClicked"
+                    android:text="@string/yes" />
 
                 <RadioButton
                     android:id="@+id/cough_no"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="@string/no"
-                    android:onClick="onCoughRadioButtonClicked"/>
+                    android:onClick="onCoughRadioButtonClicked"
+                    android:text="@string/no" />
             </RadioGroup>
         </LinearLayout>
 
@@ -164,8 +169,10 @@
             <TextView
                 android:id="@+id/bodypains"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="5sp"
                 android:layout_weight="2"
+                android:gravity="center"
                 android:text="@string/body_pains"
                 android:textSize="18sp" />
 
@@ -174,21 +181,22 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:orientation="horizontal">
+
                 <RadioButton
                     android:id="@+id/bodypains_yes"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="@string/yes"
-                    android:onClick="onBodyPainsRadioButtonClicked"/>
+                    android:onClick="onBodyPainsRadioButtonClicked"
+                    android:text="@string/yes" />
 
                 <RadioButton
                     android:id="@+id/bodypains_no"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="@string/no"
-                    android:onClick="onBodyPainsRadioButtonClicked" />
+                    android:onClick="onBodyPainsRadioButtonClicked"
+                    android:text="@string/no" />
             </RadioGroup>
         </LinearLayout>
 
@@ -201,6 +209,7 @@
                 android:id="@+id/submit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="5sp"
                 android:text="@string/submit"
                 app:backgroundTint="#479EE3" />
         </LinearLayout>

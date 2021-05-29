@@ -26,23 +26,18 @@
         android:id="@+id/linearLayout3"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginLeft="1dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginRight="1dp"
-        android:layout_marginBottom="1dp"
+        android:layout_margin="5sp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        >
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/Welcome"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="5sp"
             android:background="#479EE3"
             android:ems="10"
             android:gravity="center"
@@ -56,6 +51,7 @@
             android:id="@+id/userName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="5sp"
             android:background="@null"
             android:ems="10"
             android:gravity="end"
@@ -65,8 +61,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="239dp"
-            android:orientation="horizontal"
-            >
+            android:layout_margin="5sp"
+            android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/cold"
@@ -75,8 +71,7 @@
                 android:layout_gravity="start"
                 android:layout_weight="1"
                 android:contentDescription="@string/todo"
-                app:srcCompat="@drawable/cold"
-                />
+                app:srcCompat="@drawable/cold" />
 
             <ImageView
                 android:id="@+id/cough"
@@ -84,8 +79,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:contentDescription="@string/todo"
-                app:srcCompat="@drawable/cough"
-                />
+                app:srcCompat="@drawable/cough" />
 
             <ImageView
                 android:id="@+id/fever"
@@ -93,20 +87,19 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:contentDescription="@string/todo"
-                app:srcCompat="@drawable/fever"
-                />
+                app:srcCompat="@drawable/fever" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            >
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/description"
                 android:layout_width="match_parent"
                 android:layout_height="130dp"
+                android:layout_margin="5sp"
                 android:gravity="center"
                 android:text="@string/coronavirus_disease_covid_19_is_an_infectious_disease_caused_by_a_newly_discovered_coronavirus_most_people_infected_with_the_covid_19_virus_will_experience_mild_to_moderate_respiratory_illness_and_recover_without_requiring_special_treatment_older_people_and_those_with_underlying_medical_problems_like_cardiovascular_disease_diabetes_chronic_respiratory_disease_and_cancer_are_more_likely_to_develop_serious_illness"
                 android:textStyle="bold" />
@@ -115,6 +108,7 @@
                 android:id="@+id/suveryText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="5sp"
                 android:background="@null"
                 android:ems="10"
                 android:gravity="center"
@@ -126,31 +120,28 @@
 
             <Space
                 android:layout_width="match_parent"
-                android:layout_height="20sp"
-                />
+                android:layout_height="20sp" />
 
-            <androidx.constraintlayout.widget.ConstraintLayout
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5sp"
+                android:gravity="center">
 
 
                 <Button
                     android:id="@+id/takeSurvey"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="28dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5sp"
                     android:gravity="center"
                     android:selectAllOnFocus="false"
                     android:shadowColor="@color/black"
                     android:text="@string/take_survey"
                     android:textColor="@color/white"
-                    android:textIsSelectable="false"
-                    app:backgroundTint="#479EE3"
-                    app:elevation="20sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
+                    android:textIsSelectable="false" />
+            </LinearLayout>
 
 
         </LinearLayout>
