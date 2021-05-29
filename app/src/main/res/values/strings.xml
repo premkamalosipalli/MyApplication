@@ -38,4 +38,12 @@
     <string name="fever">Fever</string>
     <string name="cough">Cough</string>
     <string name="submit">SUBMIT</string>
+    <string name="todo">TODO</string>
+    <string name="as_you_are_having_symptoms_we_recommend_you_to_take_covid_test_as_soon_as_possible">As you are having symptoms, we recommend you to take covid test as soon as possible</string>
+    <string name="you_should_wash_your_hands_thoroughly_for_at_least_20_seconds">You should wash your hands, thoroughly, for at least 20 seconds.</string>
+    <string name="please_maintain_at_a_distance_of_2m">Please maintain at a distance of 2m</string>
+    <string name="please_wear_a_mask">Please wear a mask</string>
+    <string name="as_you_are_having_symptoms_of_covid_19_we_recommend_you_to_take_covid_test_as_soon_as_possible_in_order_to_reduce_the_spread_of_disease_we_insist_you_to_follow_basic_instructions_below">As you are having symptoms of Covid 19, we recommend you to take covid test as soon as possible. In order to reduce the spread of disease, we insist you to follow basic instructions below.</string>
+    <string name="take_covid_test">Take Covid Test</string>
+    <string name="please_maintain_a_distance_of_2m">Please maintain a distance of 2m</string>
 </resources>
