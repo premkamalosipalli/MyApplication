@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">My Application</string>
-    <string name="actitvity_main">Actitvity Main</string>
+    <string name="activity_main">Activity Main</string>
     <string name="button">Button</string>
     <string name="first_fragment">First Fragment</string>
     <string name="second_fragment">Second Fragment</string>
@@ -30,12 +30,20 @@
     <string name="name">Name</string>
     <string name="first_name">First Name</string>
     <string name="have_an_account">Have An Account ?</string>
-    <string name="please_take_the_following_survey_and_select_the_options_according_to_the_symptoms_based_on_the_symptoms_that_you_have_selected_we_will_inform_you_whether_you_are_infected_by_covid_19_or_not">Please take the following survey and select the options according to the symptoms. Based on the symptoms that you have selected we will inform you whether you are infected by covid 19 or not.</string>
+    <string name="coronavirus_disease_covid_19_is_an_infectious_disease_caused_by_a_newly_discovered_coronavirus_most_people_infected_with_the_covid_19_virus_will_experience_mild_to_moderate_respiratory_illness_and_recover_without_requiring_special_treatment_older_people_and_those_with_underlying_medical_problems_like_cardiovascular_disease_diabetes_chronic_respiratory_disease_and_cancer_are_more_likely_to_develop_serious_illness">
+        coronavirus disease covid 19 is an infectious disease caused by a newly discovered coronavirus most people infected with the covid 19 virus will experience mild to moderate respiratory illness and recover without requiring special treatment older people and those with underlying medical problems like cardiovascular disease diabetes chronic respiratory disease and cancer are more likely to develop Serious Illness
+    </string>
+    <string name="please_take_the_following_survey_and_select_the_options_according_to_the_symptoms_based_on_the_symptoms_that_you_have_selected_we_will_inform_you_whether_you_are_infected_by_covid_19_or_not">
+        Please take the following survey and select the options according to the symptoms. Based on the symptoms that you have selected we will inform you whether you are infected by covid 19 or not.</string>
     <string name="do_you_have_following_symptoms">Do you have following Symptoms?</string>
     <string name="cold">cold</string>
+    <string name="todo">Todo</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
     <string name="fever">Fever</string>
     <string name="cough">Cough</string>
     <string name="submit">SUBMIT</string>
+    <string name="click_the_below_link_to_take_a_survey">Click the below link to take a Survey</string>
+    <string name="take_survey">Take Survey</string>
+    <string name="hello">Hello</string>
 </resources>

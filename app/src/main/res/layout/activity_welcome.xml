@@ -43,15 +43,14 @@
             android:id="@+id/Welcome"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@null"
+            android:background="#6FAFE1"
             android:ems="10"
             android:gravity="center"
             android:hint="@string/welcome"
             android:importantForAutofill="no"
-            android:inputType="textPersonName"
             android:text="@string/welcome"
-            android:textSize="60sp"
-            />
+            android:textColor="@color/white"
+            android:textSize="60sp" />
 
         <TextView
             android:id="@+id/userName"
@@ -61,10 +60,7 @@
             android:ems="10"
             android:gravity="end"
             android:hint="@string/hello"
-            android:importantForAutofill="no"
-            android:inputType="textPersonName"
-            android:text="@string/hello"
-            />
+            android:importantForAutofill="no" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -111,9 +107,9 @@
                 android:id="@+id/description"
                 android:layout_width="match_parent"
                 android:layout_height="130dp"
+                android:gravity="center"
                 android:text="@string/coronavirus_disease_covid_19_is_an_infectious_disease_caused_by_a_newly_discovered_coronavirus_most_people_infected_with_the_covid_19_virus_will_experience_mild_to_moderate_respiratory_illness_and_recover_without_requiring_special_treatment_older_people_and_those_with_underlying_medical_problems_like_cardiovascular_disease_diabetes_chronic_respiratory_disease_and_cancer_are_more_likely_to_develop_serious_illness"
-                android:textStyle="bold"
-                />
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/suveryText"
@@ -122,30 +118,41 @@
                 android:background="@null"
                 android:ems="10"
                 android:gravity="center"
-                android:hint="@string/click_the_below_button_to_take_a_survey"
+                android:hint="@string/click_the_below_link_to_take_a_survey"
                 android:importantForAutofill="no"
-                android:inputType="textPersonName"
-                android:text="@string/click_the_below_button_to_take_a_survey"
+                android:text="@string/click_the_below_link_to_take_a_survey"
                 android:textColor="@color/purple_700"
-                />
+                android:textSize="20sp" />
 
             <Space
                 android:layout_width="match_parent"
                 android:layout_height="20sp"
                 />
 
-            <Button
-                android:id="@+id/takeSurvey"
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:selectAllOnFocus="false"
-                android:shadowColor="@color/black"
-                android:text="@string/take_survey"
-                android:textColor="@color/purple_700"
-                android:textIsSelectable="false"
-                app:backgroundTint="@color/white"
-                app:elevation="20sp"
-                />
+                android:layout_height="wrap_content">
+
+
+                <Button
+                    android:id="@+id/takeSurvey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp"
+                    android:gravity="center"
+                    android:selectAllOnFocus="false"
+                    android:shadowColor="@color/black"
+                    android:text="@string/take_survey"
+                    android:textColor="@color/white"
+                    android:textIsSelectable="false"
+                    app:backgroundTint="#479EE3"
+                    app:elevation="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
         </LinearLayout>
 
     </LinearLayout>
