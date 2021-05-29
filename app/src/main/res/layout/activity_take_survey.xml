@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-    <androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".TakeSurvey">
-
     <LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="0dp"
@@ -55,6 +53,7 @@
                 android:textSize="18sp" />
 
             <RadioGroup
+                android:id="@+id/cold_group"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -65,7 +64,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:onClick="onColdRadioButtonClicked"
                     android:text="@string/yes" />
 
                 <RadioButton
@@ -73,7 +71,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:onClick="onColdRadioButtonClicked"
                     android:text="@string/no" />
             </RadioGroup>
 
@@ -96,6 +93,7 @@
                 android:textSize="18sp" />
 
             <RadioGroup
+                android:id="@+id/fever_group"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -106,7 +104,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:onClick="onFeverRadioButtonClicked"
                     android:text="@string/yes" />
 
                 <RadioButton
@@ -114,7 +111,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:onClick="onFeverRadioButtonClicked"
                     android:text="@string/no" />
             </RadioGroup>
 
@@ -137,6 +133,7 @@
                 android:textSize="18sp" />
 
             <RadioGroup
+                android:id="@+id/cough_group"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -147,7 +144,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:onClick="onCoughRadioButtonClicked"
                     android:text="@string/yes" />
 
                 <RadioButton
@@ -155,7 +151,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:onClick="onCoughRadioButtonClicked"
                     android:text="@string/no" />
             </RadioGroup>
         </LinearLayout>
@@ -177,6 +172,7 @@
                 android:textSize="18sp" />
 
             <RadioGroup
+                android:id="@+id/bodypains_group"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -187,7 +183,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:onClick="onBodyPainsRadioButtonClicked"
                     android:text="@string/yes" />
 
                 <RadioButton
@@ -195,7 +190,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:onClick="onBodyPainsRadioButtonClicked"
                     android:text="@string/no" />
             </RadioGroup>
         </LinearLayout>
@@ -215,5 +209,4 @@
         </LinearLayout>
 
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

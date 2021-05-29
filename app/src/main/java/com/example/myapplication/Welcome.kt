@@ -19,13 +19,13 @@ class Welcome : AppCompatActivity() {
         userName = findViewById(R.id.userName)
         takeSurvey = findViewById(R.id.takeSurvey)
 
-        var intent: Intent = intent
-        var username = intent.getStringExtra("name")
+        val intent: Intent = intent
+        val username = intent.getStringExtra("name")
 
         userName.text = "Hello, $username"
 
         takeSurvey.setOnClickListener() {
-            val intent: Intent = Intent(applicationContext, TakeSurvey::class.java)
+            val intent = Intent(applicationContext, TakeSurvey::class.java)
 
             startActivity(intent)
         }
