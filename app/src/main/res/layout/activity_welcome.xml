@@ -43,7 +43,7 @@
             android:id="@+id/Welcome"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#6FAFE1"
+            android:background="#479EE3"
             android:ems="10"
             android:gravity="center"
             android:hint="@string/welcome"
