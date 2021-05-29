@@ -46,14 +46,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Negative">
+        <activity android:name=".Positive">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Positive">
+        <activity android:name=".Negative">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

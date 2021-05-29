@@ -49,25 +49,35 @@
 
             <TextView
                 android:id="@+id/cold"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:text="@string/cold"
                 android:textSize="18sp" />
 
-            <CheckBox
-                android:id="@+id/coldYes"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/yes" />
+                android:orientation="horizontal">
 
-            <CheckBox
-                android:id="@+id/coldNo"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/no" />
+                <RadioButton
+                    android:id="@+id/cold_yes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/yes"
+                    android:onClick="onColdRadioButtonClicked"/>
+
+                <RadioButton
+                    android:id="@+id/cold_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/no"
+                    android:onClick="onColdRadioButtonClicked"/>
+            </RadioGroup>
+
         </LinearLayout>
 
         <LinearLayout
@@ -78,25 +88,34 @@
 
             <TextView
                 android:id="@+id/fever"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:text="@string/fever"
                 android:textSize="18sp" />
 
-            <CheckBox
-                android:id="@+id/feverYes"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/yes" />
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/fever_yes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/yes"
+                    android:onClick="onFeverRadioButtonClicked"/>
 
-            <CheckBox
-                android:id="@+id/feverNo"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/no" />
+                <RadioButton
+                    android:id="@+id/fever_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/no"
+                    android:onClick="onFeverRadioButtonClicked"/>
+            </RadioGroup>
+
         </LinearLayout>
 
         <LinearLayout
@@ -107,25 +126,70 @@
 
             <TextView
                 android:id="@+id/cough"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:text="@string/cough"
                 android:textSize="18sp" />
 
-            <CheckBox
-                android:id="@+id/coughYes"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/yes" />
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/cough_yes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/yes"
+                    android:onClick="onCoughRadioButtonClicked"/>
 
-            <CheckBox
-                android:id="@+id/coughNo"
-                android:layout_width="wrap_content"
+                <RadioButton
+                    android:id="@+id/cough_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/no"
+                    android:onClick="onCoughRadioButtonClicked"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="79dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/bodypains"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/body_pains"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/no" />
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/bodypains_yes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/yes"
+                    android:onClick="onBodyPainsRadioButtonClicked"/>
+
+                <RadioButton
+                    android:id="@+id/bodypains_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/no"
+                    android:onClick="onBodyPainsRadioButtonClicked" />
+            </RadioGroup>
         </LinearLayout>
 
         <LinearLayout

@@ -8,14 +8,14 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.database.*
+//import com.google.firebase.database.*
 
 
 class SignUp : AppCompatActivity() {
 
     private var mFirebaseAuthAuth: FirebaseAuth? = null
-    private lateinit var fireBaseDataBase: FirebaseDatabase
-    private lateinit var reference: DatabaseReference
+   // private lateinit var fireBaseDataBase: FirebaseDatabase
+   // private lateinit var reference: DatabaseReference
     private lateinit var firstName:EditText
     private lateinit var lastName:EditText
     private lateinit var mobileNumber:EditText
@@ -23,9 +23,9 @@ class SignUp : AppCompatActivity() {
     private lateinit var govtId:EditText
     private lateinit var initialPassword:EditText
     private lateinit var confirmPassword:EditText
-    private lateinit var signUp: Button;
+    private lateinit var signUp: Button
 
-    private lateinit var signIn: Button;
+    private lateinit var signIn: Button
 
     private var isValid:Boolean=true
 
@@ -54,7 +54,7 @@ class SignUp : AppCompatActivity() {
         signIn=findViewById(R.id.signIn)
         signIn.setOnClickListener(){
 
-            val intent: Intent = Intent(applicationContext, MainActivity::class.java)
+            val intent = Intent(applicationContext, MainActivity::class.java)
 
             startActivity(intent)
         }
@@ -109,12 +109,12 @@ class SignUp : AppCompatActivity() {
         }
 
         if(isValid){
-            var firstName=firstName.text.toString()
-            var mobileNumber=mobileNumber.text.toString()
-            var confirmPassword=confirmPassword.text.toString()
+            val firstName=firstName.text.toString()
+            val mobileNumber=mobileNumber.text.toString()
+            val confirmPassword=confirmPassword.text.toString()
 
             Toast.makeText(this,"User SignUp Successful",Toast.LENGTH_LONG).show()
-            val intent: Intent = Intent(applicationContext, MainActivity::class.java)
+            val intent = Intent(applicationContext, MainActivity::class.java)
 
             intent.putExtra("name",firstName)
             intent.putExtra("mobileNumber",mobileNumber)

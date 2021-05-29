@@ -28,7 +28,7 @@
         android:layout_marginRight="3dp"
         android:layout_marginBottom="190dp"
         android:gravity="center"
-        android:text="@string/thanks_for_the_survey_as_you_have_that_your_are_not_having_any_symtoms_that_are_mentioned_in_the_survey_it_is_most_likely_that_you_are_not_infected_by_covid_19"
+        android:text="@string/thanks_for_the_survey_as_you_have_that_your_are_not_having_any_symptoms_that_are_mentioned_in_the_survey_it_is_most_likely_that_you_are_not_infected_by_covid_19"
         android:textSize="22sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"

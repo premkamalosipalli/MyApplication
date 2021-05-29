@@ -68,12 +68,13 @@
 Isolate for 10 days from the time their COVID-19 symptoms started, or from the date they tested positive, as long as that includes 1 full day without a fever and other symptoms get better. Testing usually is not needed to decide when to stop isolation.
     </string>
 
-    <string name="cold">cold</string>
+    <string name="cold">Cold</string>
     <string name="todo">Todo</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
     <string name="fever">Fever</string>
     <string name="cough">Cough</string>
+    <string name="body_pains">Body Pains</string>
     <string name="submit">SUBMIT</string>
     <string name="click_the_below_link_to_take_a_survey">Click the below link to take a Survey</string>
     <string name="take_survey">Take Survey</string>
