@@ -43,6 +43,7 @@
             android:layout_margin="5sp"
             android:gravity="bottom|center"
             android:text="@string/log_out"
+            android:textColor="@color/white"
             android:textSize="24sp"
             app:backgroundTint="#479EE3" />
     </LinearLayout>

@@ -219,6 +219,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="5sp"
                 android:text="@string/submit"
+                android:textColor="@color/white"
                 app:backgroundTint="#479EE3" />
         </LinearLayout>
 
