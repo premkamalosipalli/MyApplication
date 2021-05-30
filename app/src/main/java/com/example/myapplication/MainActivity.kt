@@ -66,10 +66,10 @@ class MainActivity : AppCompatActivity() {
             val firstName=intent.getStringExtra("name")
             val phoneNumber=intent.getStringExtra("mobileNumber")
             val confirmPassword=intent.getStringExtra("password")
-            if (mobileNumber.text.toString() ==  phoneNumber&&
-                password.text.toString() == confirmPassword ||
-                mobileNumber.text.toString() ==  "1234567890"&&
-                password.text.toString() == "1234"
+            if ((mobileNumber.text.toString() ==  phoneNumber&&
+                password.text.toString() == confirmPassword) ||
+                (mobileNumber.text.toString() ==  "1234567890"&&
+                password.text.toString() == "1234")
             ) {
                 val toast = Toast.makeText(this, HtmlCompat.fromHtml(
                     "<font color='#00ff00' ><b>Hello,${firstName}." +

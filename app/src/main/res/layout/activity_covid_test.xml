@@ -50,7 +50,6 @@
             android:layout_margin="5sp"
             android:gravity="center"
             android:text="@string/as_you_are_having_symptoms_of_covid_19_we_recommend_you_to_take_covid_test_as_soon_as_possible_in_order_to_reduce_the_spread_of_disease_we_insist_you_to_follow_basic_instructions_below"
-            android:textColor="@color/black"
             android:textSize="18sp" />
 
         <LinearLayout
@@ -77,7 +76,6 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="@string/you_should_wash_your_hands_thoroughly_for_at_least_20_seconds"
-                android:textColor="@color/black"
                 android:textSize="18sp" />
         </LinearLayout>
 
@@ -104,7 +102,6 @@
                 android:layout_margin="5sp"
                 android:layout_weight="1"
                 android:text="@string/please_maintain_a_distance_of_2m"
-                android:textColor="@color/black"
                 android:textSize="18sp" />
         </LinearLayout>
 
@@ -132,27 +129,26 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="@string/please_wear_a_mask"
-                android:textColor="@color/black"
                 android:textSize="18sp" />
         </LinearLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
 
 
             <Button
                 android:id="@+id/takeCovidTest"
                 android:layout_width="190dp"
                 android:layout_height="56dp"
-                android:layout_marginTop="24dp"
-                android:layout_marginEnd="108dp"
-                android:layout_marginRight="108dp"
                 android:gravity="center"
                 android:text="@string/take_covid_test"
                 android:textColor="@color/white"
                 app:backgroundTint="#479EE3"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 

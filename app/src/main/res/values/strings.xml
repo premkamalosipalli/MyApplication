@@ -30,9 +30,7 @@
     <string name="name">Name</string>
     <string name="first_name">First Name</string>
     <string name="have_an_account">Have An Account ?</string>
-    <string name="coronavirus_disease_covid_19_is_an_infectious_disease_caused_by_a_newly_discovered_coronavirus_most_people_infected_with_the_covid_19_virus_will_experience_mild_to_moderate_respiratory_illness_and_recover_without_requiring_special_treatment_older_people_and_those_with_underlying_medical_problems_like_cardiovascular_disease_diabetes_chronic_respiratory_disease_and_cancer_are_more_likely_to_develop_serious_illness">
-        coronavirus disease covid 19 is an infectious disease caused by a newly discovered coronavirus most people infected with the covid 19 virus will experience mild to moderate respiratory illness and recover without requiring special treatment older people and those with underlying medical problems like cardiovascular disease diabetes chronic respiratory disease and cancer are more likely to develop Serious Illness
-    </string>
+
     <string name="as_you_are_having_symptoms_of_covid_19_we_recommend_you_to_take_covid_test_as_soon_as_possible_in_order_to_reduce_the_spread_of_disease_we_insist_you_to_follow_basic_instructions_below">
         As you are having symptoms of Covid 19. We recommend you to take Covid Test as soon as possible in order to reduce the spreed of disease we insist you to follow basic instructions below
     </string>
@@ -62,9 +60,6 @@
     <string name="st_johns_institute_of_medical_sciences_sarjapur_road_john_nagar_koramangala_91_80_2206_5324">
     St. Johns Institute Of Medical Sciences, Sarjapur Road John Nagar Koramangala
     </string>
-    <string name="isolate_for_10_days_from_the_time_their_covid_19_symptoms_started_or_from_the_date_they_tested_positive_as_long_as_that_includes_1_full_day_without_a_fever_and_other_symptoms_get_better_testing_usually_isn_t_needed_to_decide_when_to_stop_isolation">
-Isolate for 10 days from the time their COVID-19 symptoms started, or from the date they tested positive, as long as that includes 1 full day without a fever and other symptoms get better. Testing usually is not needed to decide when to stop isolation.
-    </string>
 
     <string name="cold">Cold</string>
     <string name="todo">Todo</string>
@@ -86,5 +81,7 @@ Isolate for 10 days from the time their COVID-19 symptoms started, or from the d
     <string name="image1">TODO</string>
     <string name="please_complete_the_following_survey_and_select_the_appropriate_answers_based_on_your_symptoms_we_will_tell_you_whether_you_have_covid_19_or_not_based_on_the_symptoms_you_have_selected">Please complete the following survey and select the appropriate answers based on your symptoms. We will tell you whether you have covid 19 or not based on the symptoms you have selected.</string>
     <string name="thank_you_for_taking_the_time_to_complete_the_survey_because_you_are_not_experiencing_any_of_the_symptoms_listed_in_the_survey_you_are_most_likely_not_infected_with_covid_19">Thank you for taking the time to complete the survey. Because you are not experiencing any of the symptoms listed in the survey, you are most likely not infected with COVID-19.</string>
+    <string name="isolate_for_10_days_from_the_moment_you_first_saw_covid_19_symptoms_or_from_the_date_you_tested_positive_as_long_as_you_don_t_have_a_fever_and_your_other_symptoms_improve_whether_deciding_when_to_end_isolation_testing_is_usually_not_required">Isolate for 10 days from the moment you first saw COVID-19 symptoms or from the date you tested positive, as long as you don\'t have a fever and your other symptoms improve. Whether deciding when to end isolation, testing is usually not required.</string>
+    <string name="coronavirus_covid_19_is_an_infectious_disease_caused_by_a_newly_discovered_virus_most_people_infected_with_the_covid_19_virus_will_experience_mild_to_moderate_respiratory_illness_and_those_with_underlying_medical_problems_like_cardiovascular_disease_diabetes_chronic_respiratory_disease_and_cancer_are_more_likely_to_develop_serious_illness">Coronavirus/COVID 19 is an infectious disease caused by a newly discovered virus. Most people infected with the COVID 19 virus will experience mild to moderate respiratory illness and those with underlying medical problems like cardiovascular disease diabetes chronic respiratory disease and cancer are more likely to develop Serious Illness.</string>
 
 </resources>

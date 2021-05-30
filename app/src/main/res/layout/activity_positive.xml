@@ -107,26 +107,37 @@
                 android:gravity="center"
                 android:text="@string/st_johns_institute_of_medical_sciences_sarjapur_road_john_nagar_koramangala_91_80_2206_5324"
                 android:textSize="16sp" />
+
         </LinearLayout>
 
-        <TextView
-            android:id="@+id/textView8"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10sp"
-            android:layout_marginBottom="10sp"
+            android:layout_height="0dp"
+            android:layout_margin="5sp"
+            android:layout_weight="1"
             android:gravity="center"
-            android:text="@string/isolate_for_10_days_from_the_time_their_covid_19_symptoms_started_or_from_the_date_they_tested_positive_as_long_as_that_includes_1_full_day_without_a_fever_and_other_symptoms_get_better_testing_usually_isn_t_needed_to_decide_when_to_stop_isolation"
-            android:textSize="16sp" />
+            android:orientation="vertical">
 
-        <Button
-            android:id="@+id/button"
-            android:layout_width="162sp"
-            android:layout_height="54sp"
-            android:layout_gravity="center"
-            android:layout_margin="10sp"
-            android:text="@string/log_out"
-            android:textSize="16sp"
-            app:backgroundTint="#479EE3" />
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:layout_marginBottom="10sp"
+                android:gravity="center"
+                android:text="@string/isolate_for_10_days_from_the_moment_you_first_saw_covid_19_symptoms_or_from_the_date_you_tested_positive_as_long_as_you_don_t_have_a_fever_and_your_other_symptoms_improve_whether_deciding_when_to_end_isolation_testing_is_usually_not_required"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="162sp"
+                android:layout_height="54sp"
+                android:layout_gravity="center"
+                android:layout_margin="10sp"
+                android:gravity="center"
+                android:text="@string/log_out"
+                android:textSize="16sp"
+                app:backgroundTint="#479EE3" />
+        </LinearLayout>
     </LinearLayout>
 </ScrollView>
