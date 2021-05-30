@@ -142,7 +142,7 @@
 
 
             <Button
-                android:id="@+id/test"
+                android:id="@+id/takeCovidTest"
                 android:layout_width="190dp"
                 android:layout_height="56dp"
                 android:layout_marginTop="24dp"

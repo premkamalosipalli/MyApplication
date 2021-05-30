@@ -3,10 +3,12 @@ package com.example.myapplication
 import android.content.Intent
 import android.os.Bundle
 import android.util.Patterns
+import android.view.Gravity
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.text.HtmlCompat
 import com.google.firebase.auth.FirebaseAuth
 //import com.google.firebase.database.*
 
@@ -14,8 +16,6 @@ import com.google.firebase.auth.FirebaseAuth
 class SignUp : AppCompatActivity() {
 
     private var mFirebaseAuthAuth: FirebaseAuth? = null
-   // private lateinit var fireBaseDataBase: FirebaseDatabase
-   // private lateinit var reference: DatabaseReference
     private lateinit var firstName:EditText
     private lateinit var lastName:EditText
     private lateinit var mobileNumber:EditText
@@ -28,9 +28,6 @@ class SignUp : AppCompatActivity() {
     private lateinit var signIn: Button
 
     private var isValid:Boolean=true
-
-
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -113,7 +110,12 @@ class SignUp : AppCompatActivity() {
             val mobileNumber=mobileNumber.text.toString()
             val confirmPassword=confirmPassword.text.toString()
 
-            Toast.makeText(this,"User SignUp Successful",Toast.LENGTH_LONG).show()
+            val toast = Toast.makeText(this, HtmlCompat.fromHtml(
+                "<font color='#00ff00' ><b>User Registered Successful</b></font>",
+                HtmlCompat.FROM_HTML_MODE_LEGACY
+            ),Toast.LENGTH_LONG)
+            toast.setGravity(Gravity.TOP, 0, 0)
+            toast.show()
             val intent = Intent(applicationContext, MainActivity::class.java)
 
             intent.putExtra("name",firstName)
@@ -123,42 +125,14 @@ class SignUp : AppCompatActivity() {
             startActivity(intent)
 
         }else{
-            Toast.makeText(this,"User SignUp Failed",Toast.LENGTH_LONG).show()
+            val toast = Toast.makeText(this,HtmlCompat.fromHtml(
+                "<font color='#FF0000' ><b>Registration Failed,Please try again after some tine.</b></font>",
+                HtmlCompat.FROM_HTML_MODE_LEGACY
+            ),Toast.LENGTH_LONG)
+            toast.setGravity(Gravity.TOP, 0, 0)
+            toast.show()
         }
 
-        /*var firstName=firstName.text.toString()
-        var lastName=lastName.text.toString()
-        var mobileNumber=mobileNumber.text.toString()
-        var emailId=emailId.text.toString()
-        var govtId=govtId.text.toString()
-        var initialPassword=initialPassword.text.toString()
-        var confirmPassword=confirmPassword.text.toString()
 
-        fireBaseDataBase= FirebaseDatabase.getInstance()
-        reference=fireBaseDataBase.getReference("Users")
-
-        userdata.firstName=firstName
-        userdata.lastName=lastName
-        userdata.mobileNumber=mobileNumber
-        userdata.emailId=emailId
-        userdata.govtId=govtId
-        userdata.initialPassword=initialPassword
-        userdata.confirmPassword=confirmPassword
-
-        reference.addValueEventListener(object : ValueEventListener {
-            override fun onDataChange(snapshot: DataSnapshot) {
-
-                reference.setValue(userdata)
-
-
-                Toast.makeText(baseContext, "data added", Toast.LENGTH_SHORT).show()
-            }
-
-            override fun onCancelled(error: DatabaseError) {
-                
-                Toast.makeText(baseContext,"Fail to add data $error", Toast.LENGTH_SHORT)
-                    .show()
-            }
-        })*/
     }
 }

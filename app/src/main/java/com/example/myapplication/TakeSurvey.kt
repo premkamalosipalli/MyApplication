@@ -27,37 +27,33 @@ class TakeSurvey : AppCompatActivity() {
 
         coldRadioGroup = findViewById(R.id.cold_group)
         // Get radio group selected item using on checked change listener
-        coldRadioGroup.setOnCheckedChangeListener(
-            RadioGroup.OnCheckedChangeListener { group, checkedId ->
-                val radio: RadioButton = findViewById(checkedId)
-                isColdRadioButtonChecked=radio.text.contentEquals("Yes")
-            })
+        coldRadioGroup.setOnCheckedChangeListener { _, checkedId ->
+            val radio: RadioButton = findViewById(checkedId)
+            isColdRadioButtonChecked = radio.text.contentEquals("Yes")
+        }
 
         coughRadioButton = findViewById(R.id.cough_group)
         // Get radio group selected item using on checked change listener
-        coughRadioButton.setOnCheckedChangeListener(
-            RadioGroup.OnCheckedChangeListener { group, checkedId ->
-                val radio: RadioButton = findViewById(checkedId)
-                isCoughRadioButtonChecked=radio.text.contentEquals("Yes")
-            })
+        coughRadioButton.setOnCheckedChangeListener { _, checkedId ->
+            val radio: RadioButton = findViewById(checkedId)
+            isCoughRadioButtonChecked = radio.text.contentEquals("Yes")
+        }
 
         feverRadioButton = findViewById(R.id.fever_group)
         // Get radio group selected item using on checked change listener
-        feverRadioButton.setOnCheckedChangeListener(
-            RadioGroup.OnCheckedChangeListener { group, checkedId ->
-                val radio: RadioButton = findViewById(checkedId)
-                isFeverRadioButtonChecked=radio.text.contentEquals("Yes")
-            })
+        feverRadioButton.setOnCheckedChangeListener { _, checkedId ->
+            val radio: RadioButton = findViewById(checkedId)
+            isFeverRadioButtonChecked = radio.text.contentEquals("Yes")
+        }
 
         bodypainsRadioButton = findViewById(R.id.bodypains_group)
         // Get radio group selected item using on checked change listener
-        bodypainsRadioButton.setOnCheckedChangeListener(
-            RadioGroup.OnCheckedChangeListener { group, checkedId ->
-                val radio: RadioButton = findViewById(checkedId)
-                isBodyPainsRadioButtonChecked=radio.text.contentEquals("Yes")
-            })
+        bodypainsRadioButton.setOnCheckedChangeListener { _, checkedId ->
+            val radio: RadioButton = findViewById(checkedId)
+            isBodyPainsRadioButtonChecked = radio.text.contentEquals("Yes")
+        }
 
-        submit = findViewById(R.id.submit)
+        submit = findViewById(R.id.submitSurvey)
 
         submit.setOnClickListener() {
             submitSurvey()

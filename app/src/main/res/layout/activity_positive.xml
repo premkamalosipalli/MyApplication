@@ -43,14 +43,13 @@
             android:layout_marginTop="10sp"
             android:layout_marginBottom="10sp"
             android:orientation="horizontal">
-
             <ImageView
-                android:id="@+id/imageView5"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:contentDescription="@string/image_1"
-                tools:srcCompat="@drawable/th" />
+                android:contentDescription="@string/todo"
+                app:srcCompat="@drawable/th" />
 
             <TextView
                 android:id="@+id/textView5"
@@ -68,14 +67,13 @@
             android:layout_marginTop="10sp"
             android:layout_marginBottom="10sp"
             android:orientation="horizontal">
-
             <ImageView
-                android:id="@+id/imageView6"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:contentDescription="@string/image_2"
-                tools:srcCompat="@drawable/ms" />
+                android:contentDescription="@string/todo"
+                app:srcCompat="@drawable/ms" />
 
             <TextView
                 android:id="@+id/textView6"
@@ -93,14 +91,13 @@
             android:layout_marginTop="10sp"
             android:layout_marginBottom="10sp"
             android:orientation="horizontal">
-
             <ImageView
                 android:id="@+id/imageView7"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:contentDescription="@string/image_3"
-                tools:srcCompat="@drawable/st" />
+                android:contentDescription="@string/todo"
+                app:srcCompat="@drawable/st" />
 
             <TextView
                 android:id="@+id/textView7"
