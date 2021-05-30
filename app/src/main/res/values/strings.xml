@@ -33,8 +33,6 @@
     <string name="coronavirus_disease_covid_19_is_an_infectious_disease_caused_by_a_newly_discovered_coronavirus_most_people_infected_with_the_covid_19_virus_will_experience_mild_to_moderate_respiratory_illness_and_recover_without_requiring_special_treatment_older_people_and_those_with_underlying_medical_problems_like_cardiovascular_disease_diabetes_chronic_respiratory_disease_and_cancer_are_more_likely_to_develop_serious_illness">
         coronavirus disease covid 19 is an infectious disease caused by a newly discovered coronavirus most people infected with the covid 19 virus will experience mild to moderate respiratory illness and recover without requiring special treatment older people and those with underlying medical problems like cardiovascular disease diabetes chronic respiratory disease and cancer are more likely to develop Serious Illness
     </string>
-    <string name="please_take_the_following_survey_and_select_the_options_according_to_the_symptoms_based_on_the_symptoms_that_you_have_selected_we_will_inform_you_whether_you_are_infected_by_covid_19_or_not">
-        Please take the following survey and select the options according to the symptoms. Based on the symptoms that you have selected we will inform you whether you are infected by covid 19 or not.</string>
     <string name="as_you_are_having_symptoms_of_covid_19_we_recommend_you_to_take_covid_test_as_soon_as_possible_in_order_to_reduce_the_spread_of_disease_we_insist_you_to_follow_basic_instructions_below">
         As you are having symptoms of Covid 19. We recommend you to take Covid Test as soon as possible in order to reduce the spreed of disease we insist you to follow basic instructions below
     </string>
@@ -84,8 +82,9 @@ Isolate for 10 days from the time their COVID-19 symptoms started, or from the d
     <string name="image_3">image 3</string>
     <string name="image_2">image 2</string>
     <string name="survey_result_and_hospitals_list">Survey Result and Hospitals List</string>
-    <string name="thanks_for_the_survey_as_you_have_that_your_are_not_having_any_symptoms_that_are_mentioned_in_the_survey_it_is_most_likely_that_you_are_not_infected_by_covid_19">
-        Thanks For the Survey. As You have that your are not having any symptoms that are mentioned in the survey, it is most likely that you are not infected by Covid-19.
-    </string>
+
+    <string name="image1">TODO</string>
+    <string name="please_complete_the_following_survey_and_select_the_appropriate_answers_based_on_your_symptoms_we_will_tell_you_whether_you_have_covid_19_or_not_based_on_the_symptoms_you_have_selected">Please complete the following survey and select the appropriate answers based on your symptoms. We will tell you whether you have covid 19 or not based on the symptoms you have selected.</string>
+    <string name="thank_you_for_taking_the_time_to_complete_the_survey_because_you_are_not_experiencing_any_of_the_symptoms_listed_in_the_survey_you_are_most_likely_not_infected_with_covid_19">Thank you for taking the time to complete the survey. Because you are not experiencing any of the symptoms listed in the survey, you are most likely not infected with COVID-19.</string>
 
 </resources>

@@ -21,91 +21,87 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="5sp">
+            android:orientation="vertical">
 
             <ImageView
                 android:id="@+id/imageView"
-                android:layout_width="420dp"
-                android:layout_height="0dp"
-                android:layout_marginTop="3dp"
-                android:layout_marginBottom="308dp"
-                app:layout_constraintBottom_toTopOf="@+id/gotoSignUp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/curequickly"
-                tools:ignore="ContentDescription" />
+                android:layout_width="match_parent"
+                android:layout_height="350sp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/image1"
+                android:src="@drawable/curequickly" />
 
-            <EditText
-                android:id="@+id/phoneNumber"
-                android:layout_width="258dp"
-                android:layout_height="67dp"
-                android:layout_marginBottom="13dp"
-                android:ems="10"
-                android:hint="@string/mobile_number"
-                android:importantForAutofill="no"
-                android:inputType="phone"
-                app:layout_constraintBottom_toTopOf="@+id/password"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
-            <EditText
-                android:id="@+id/password"
-                android:layout_width="259dp"
-                android:layout_height="56dp"
-                android:layout_marginBottom="337dp"
-                android:ems="10"
-                android:hint="@string/password"
-                android:importantForAutofill="no"
-                android:inputType="textPassword"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="@+id/phoneNumber"
-                app:layout_constraintTop_toBottomOf="@+id/phoneNumber" />
-
-            <Button
-                android:id="@+id/gotoSignIn"
-                android:layout_width="208dp"
-                android:layout_height="66dp"
-                android:layout_marginBottom="235dp"
-                android:text="@string/sign_in"
-                app:backgroundTint="#479EE3"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/password" />
-
-            <TextView
-                android:id="@+id/haveNoAccount"
-                android:layout_width="0dp"
-                android:layout_height="45dp"
-                android:layout_marginStart="24dp"
-                android:layout_marginLeft="24dp"
-                android:layout_marginBottom="142dp"
-                android:text="@string/don_t_have_account"
-                android:textSize="20sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/gotoSignUp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/gotoSignIn"
-                app:layout_constraintVertical_bias="1.0" />
-
-            <Button
-                android:id="@+id/gotoSignUp"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="74dp"
-                android:layout_marginRight="74dp"
-                android:layout_marginBottom="139dp"
-                android:text="@string/sign_up"
-                android:textColor="#0421C5"
-                app:backgroundTint="#C6E6E4E4"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/haveNoAccount"
-                app:layout_constraintTop_toBottomOf="@+id/imageView" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
+                android:layout_margin="5sp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/phoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="70sp"
+                    android:layout_gravity="center"
+                    android:layout_margin="10sp"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="@string/mobile_number"
+                    android:importantForAutofill="no"
+                    android:inputType="phone" />
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="70sp"
+                    android:layout_gravity="center"
+                    android:layout_margin="10sp"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="@string/password"
+                    android:importantForAutofill="no"
+                    android:inputType="textPassword" />
+
+                <Button
+                    android:id="@+id/gotoSignIn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5sp"
+                    android:text="@string/sign_in"
+                    app:backgroundTint="#479EE3" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/haveNoAccount"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5sp"
+                    android:layout_weight="3"
+                    android:gravity="center|start"
+                    android:text="@string/don_t_have_account"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/gotoSignUp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0"
+                    android:gravity="center"
+                    android:text="@string/sign_up"
+                    android:textColor="@color/white"
+                    app:backgroundTint="#479EE3" />
+            </LinearLayout>
+        </LinearLayout>
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
