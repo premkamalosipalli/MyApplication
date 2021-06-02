@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var signIn: Button
     private lateinit var signUp: Button
 
-    private var isValid:Boolean=true
+    private var isValid: Boolean = true
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,64 +28,66 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         mFirebaseAuthAuth = FirebaseAuth.getInstance()
-        mobileNumber=findViewById(R.id.phoneNumber)
-        password=findViewById(R.id.password)
-        signIn=findViewById(R.id.gotoSignIn)
+        mobileNumber = findViewById(R.id.phoneNumber)
+        password = findViewById(R.id.password)
+        signIn = findViewById(R.id.gotoSignIn)
 
-        signIn.setOnClickListener{
+        signIn.setOnClickListener {
             loginUser()
         }
 
-        signUp=findViewById(R.id.gotoSignUp)
-        signUp.setOnClickListener(){
+        signUp = findViewById(R.id.gotoSignUp)
+        signUp.setOnClickListener() {
             val intent = Intent(applicationContext, SignUp::class.java)
 
             startActivity(intent)
         }
     }
 
-    private fun loginUser(){
+    private fun loginUser() {
 
-        if(mobileNumber.text.toString().isEmpty()){
-            mobileNumber.error="Please Enter the Mobile Number"
+        if (mobileNumber.text.toString().isEmpty()) {
+            mobileNumber.error = "Please Enter the Mobile Number"
             mobileNumber.requestFocus()
-            isValid=false
+            isValid = false
         }
-        if(!Patterns.PHONE.matcher(mobileNumber.text.toString()).matches()){
-            mobileNumber.error="Please Enter valid Mobile Number"
+        if (!Patterns.PHONE.matcher(mobileNumber.text.toString()).matches()) {
+            mobileNumber.error = "Please Enter valid Mobile Number"
             mobileNumber.requestFocus()
-            isValid=false
+            isValid = false
         }
-        if(password.text.toString().isEmpty()) {
+        if (password.text.toString().isEmpty()) {
             password.error = "Please Enter confirmation password"
             password.requestFocus()
-            isValid=false
+            isValid = false
         }
-        if(isValid) {
-            val intent:Intent=intent
-            val firstName=intent.getStringExtra("name")
-            val phoneNumber=intent.getStringExtra("mobileNumber")
-            val confirmPassword=intent.getStringExtra("password")
-            if (mobileNumber.text.toString() ==  phoneNumber ||
-                        mobileNumber.text.toString() ==  "1234567890"&&
-                password.text.toString() == confirmPassword ||
-                        password.text.toString() == "123456"
+        if (isValid) {
+            val intent: Intent = intent
+            val firstName = intent.getStringExtra("name")
+            val phoneNumber = intent.getStringExtra("mobileNumber")
+            val confirmPassword = intent.getStringExtra("password")
+            if ((mobileNumber.text.toString() == phoneNumber && password.text.toString() == confirmPassword) ||
+                (mobileNumber.text.toString() == "1234567890" && password.text.toString() == "123456")
             ) {
-                val toast = Toast.makeText(this, HtmlCompat.fromHtml(
-                    "<font color='#00ff00' ><b>Hello,${firstName}." +
-                            "Welcome to Cure Quickly.</b></font>",
-                    HtmlCompat.FROM_HTML_MODE_LEGACY
-                ), Toast.LENGTH_LONG)
+                val toast = Toast.makeText(
+                    this, HtmlCompat.fromHtml(
+                        "<font color='#00ff00' ><b>Hello,${firstName}." +
+                                "Welcome to Cure Quickly.</b></font>",
+                        HtmlCompat.FROM_HTML_MODE_LEGACY
+                    ), Toast.LENGTH_LONG
+                )
                 toast.setGravity(Gravity.TOP, 0, 0)
                 toast.show()
                 val intent = Intent(applicationContext, Welcome::class.java)
-                intent.putExtra("name",firstName)
+                intent.putExtra("name", firstName)
                 startActivity(intent)
-            }else{
-                val toast = Toast.makeText(this, HtmlCompat.fromHtml(
-                    "<font color='#FF0000' ><b>Please Enter valid Login Credentials..</b></font>",
-                    HtmlCompat.FROM_HTML_MODE_LEGACY
-                ), Toast.LENGTH_LONG)
+            } else {
+                val toast = Toast.makeText(
+                    this, HtmlCompat.fromHtml(
+                        "<font color='#FF0000' ><b>Please Enter valid Login Credentials..</b></font>",
+                        HtmlCompat.FROM_HTML_MODE_LEGACY
+                    ), Toast.LENGTH_LONG
+                )
                 toast.setGravity(Gravity.TOP, 0, 0)
                 toast.show()
                 val intent = Intent(applicationContext, MainActivity::class.java)
