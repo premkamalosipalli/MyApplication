@@ -4,7 +4,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Gravity
-import android.view.View
 import android.view.Window
 import android.widget.Button
 import android.widget.RadioButton
@@ -24,8 +23,8 @@ class TakeSurvey : AppCompatActivity() {
     private lateinit var bodypainsRadioButton: RadioGroup
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        requestWindowFeature(Window.FEATURE_NO_TITLE); //will hide the title
-        getSupportActionBar()?.hide();
+        requestWindowFeature(Window.FEATURE_NO_TITLE) //will hide the title
+        supportActionBar?.hide()
         setContentView(R.layout.activity_take_survey)
 
         coldRadioGroup = findViewById(R.id.cold_group)
@@ -58,7 +57,7 @@ class TakeSurvey : AppCompatActivity() {
 
         submit = findViewById(R.id.submitSurvey)
 
-        submit.setOnClickListener() {
+        submit.setOnClickListener {
             submitSurvey()
 
         }

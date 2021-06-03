@@ -8,7 +8,6 @@ import android.view.Window
 import android.widget.Button
 import android.widget.Toast
 import androidx.core.text.HtmlCompat
-import kotlin.math.log
 
 class Positive : AppCompatActivity() {
 
@@ -16,13 +15,13 @@ class Positive : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        requestWindowFeature(Window.FEATURE_NO_TITLE); //will hide the title
-        getSupportActionBar()?.hide();
+        requestWindowFeature(Window.FEATURE_NO_TITLE) //will hide the title
+        supportActionBar?.hide()
         setContentView(R.layout.activity_positive)
 
         logout=findViewById(R.id.button)
 
-        logout.setOnClickListener() {
+        logout.setOnClickListener {
             val toast = Toast.makeText(this, HtmlCompat.fromHtml(
                 "<font color='#00ff00' ><b>Thanks You. Have a Nice Day</b></font>",
                 HtmlCompat.FROM_HTML_MODE_LEGACY

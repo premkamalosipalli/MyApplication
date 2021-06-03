@@ -32,8 +32,8 @@ class SignUp : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        requestWindowFeature(Window.FEATURE_NO_TITLE); //will hide the title
-        getSupportActionBar()?.hide();
+        requestWindowFeature(Window.FEATURE_NO_TITLE) //will hide the title
+        supportActionBar?.hide()
         setContentView(R.layout.activity_sign_up)
 
         mFirebaseAuthAuth = FirebaseAuth.getInstance()
@@ -52,7 +52,7 @@ class SignUp : AppCompatActivity() {
         }
 
         signIn=findViewById(R.id.signIn)
-        signIn.setOnClickListener(){
+        signIn.setOnClickListener {
 
             val intent = Intent(applicationContext, MainActivity::class.java)
 

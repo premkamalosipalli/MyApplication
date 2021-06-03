@@ -15,13 +15,13 @@ class CovidTest : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        requestWindowFeature(Window.FEATURE_NO_TITLE); //will hide the title
-        getSupportActionBar()?.hide();
+        requestWindowFeature(Window.FEATURE_NO_TITLE) //will hide the title
+        supportActionBar?.hide()
         setContentView(R.layout.activity_covid_test)
 
         takeCovidTest=findViewById(R.id.takeCovidTest)
 
-        takeCovidTest.setOnClickListener() {
+        takeCovidTest.setOnClickListener {
             val toast = Toast.makeText(this, HtmlCompat.fromHtml(
                 "<font color='#00ff00' ><b>Select an Hospital to take Covid-19 test.</b></font>",
                 HtmlCompat.FROM_HTML_MODE_LEGACY

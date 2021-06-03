@@ -18,8 +18,8 @@ class Welcome : AppCompatActivity() {
     @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        requestWindowFeature(Window.FEATURE_NO_TITLE); //will hide the title
-        getSupportActionBar()?.hide();
+        requestWindowFeature(Window.FEATURE_NO_TITLE) //will hide the title
+        supportActionBar?.hide()
         setContentView(R.layout.activity_welcome)
 
         userName = findViewById(R.id.userName)
@@ -30,7 +30,7 @@ class Welcome : AppCompatActivity() {
 
         userName.text = "Hello, $username"
 
-        takeSurvey.setOnClickListener() {
+        takeSurvey.setOnClickListener {
             val toast = Toast.makeText(this, HtmlCompat.fromHtml(
                 "<font color='#00ff00' ><b>Welcome to the Survey.</b></font>",
                 HtmlCompat.FROM_HTML_MODE_LEGACY

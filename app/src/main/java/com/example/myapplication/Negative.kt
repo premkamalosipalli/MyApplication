@@ -15,13 +15,13 @@ class Negative : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        requestWindowFeature(Window.FEATURE_NO_TITLE); //will hide the title
-        getSupportActionBar()?.hide();
+        requestWindowFeature(Window.FEATURE_NO_TITLE) //will hide the title
+        supportActionBar?.hide()
         setContentView(R.layout.activity_negative)
 
         logout=findViewById(R.id.logout)
 
-        logout.setOnClickListener() {
+        logout.setOnClickListener {
             val toast = Toast.makeText(this, HtmlCompat.fromHtml(
                 "<font color='#00ff00' ><b>Thanks You. Have a Nice Day</b></font>",
                 HtmlCompat.FROM_HTML_MODE_LEGACY
