@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Gravity
+import android.view.Window
 import android.widget.Button
 import android.widget.Toast
 import androidx.core.text.HtmlCompat
@@ -14,6 +15,8 @@ class CovidTest : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        requestWindowFeature(Window.FEATURE_NO_TITLE); //will hide the title
+        getSupportActionBar()?.hide();
         setContentView(R.layout.activity_covid_test)
 
         takeCovidTest=findViewById(R.id.takeCovidTest)
