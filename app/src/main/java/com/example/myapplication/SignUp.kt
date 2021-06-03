@@ -60,51 +60,77 @@ class SignUp : AppCompatActivity() {
     private fun createUser(){
 
         if(firstName.text.toString().isEmpty()){
-            firstName.error="Please Enter the First Name"
+            firstName.error="Please enter the First Name"
             firstName.requestFocus()
             isValid=false
         }
+        else{
+            isValid=true
+        }
         if(lastName.text.toString().isEmpty()){
-            lastName.error="Please Enter the Last Name"
+            lastName.error="Please enter the Last Name"
             lastName.requestFocus()
             isValid=false
         }
+        else{
+            isValid=true
+        }
         if(mobileNumber.text.toString().isEmpty()){
-            mobileNumber.error="Please Enter the Mobile Number"
+            mobileNumber.error="Please enter the Mobile Number"
             mobileNumber.requestFocus()
             isValid=false
+        }
+        else{
+            isValid=true
         }
         if(!Patterns.PHONE.matcher(mobileNumber.text.toString()).matches()){
-            mobileNumber.error="Please Enter valid Mobile Number"
+            mobileNumber.error="Please enter valid Mobile Number"
             mobileNumber.requestFocus()
             isValid=false
         }
+        else{
+            isValid=true
+        }
         if(emailId.text.toString().isEmpty()){
-            emailId.error="Please Enter the Email"
+            emailId.error="Please enter the Email"
             emailId.requestFocus()
             isValid=false
+        }
+        else{
+            isValid=true
         }
         if(!Patterns.EMAIL_ADDRESS.matcher(emailId.text.toString()).matches()){
-            emailId.error="Please Enter valid Email"
+            emailId.error="Please enter valid Email"
             emailId.requestFocus()
             isValid=false
         }
+        else{
+            isValid=true
+        }
         if(govtId.text.toString().isEmpty()){
-            govtId.error="Please Enter Your Government Id"
+            govtId.error="Please enter Your Government Id"
             govtId.requestFocus()
             isValid=false
         }
+        else{
+            isValid=true
+        }
         if(initialPassword.text.toString().isEmpty()){
-            initialPassword.error="Please Enter initial Password"
+            initialPassword.error="Please enter Initial Password"
             initialPassword.requestFocus()
             isValid=false
         }
+        else{
+            isValid=true
+        }
         if(confirmPassword.text.toString().isEmpty()) {
-            confirmPassword.error = "Please Enter confirmation password"
+            confirmPassword.error = "Please enter Confirmation Password"
             confirmPassword.requestFocus()
             isValid=false
         }
-
+        else{
+            isValid=true
+        }
         if(isValid){
             val firstName=firstName.text.toString()
             val mobileNumber=mobileNumber.text.toString()
@@ -124,14 +150,15 @@ class SignUp : AppCompatActivity() {
 
             startActivity(intent)
 
-        }else{
+        }
+        /*else{
             val toast = Toast.makeText(this,HtmlCompat.fromHtml(
                 "<font color='#FF0000' ><b>Registration Failed,Please try again after some tine.</b></font>",
                 HtmlCompat.FROM_HTML_MODE_LEGACY
             ),Toast.LENGTH_LONG)
             toast.setGravity(Gravity.TOP, 0, 0)
             toast.show()
-        }
+        }*/
 
 
     }

@@ -47,19 +47,28 @@ class MainActivity : AppCompatActivity() {
     private fun loginUser() {
 
         if (mobileNumber.text.toString().isEmpty()) {
-            mobileNumber.error = "Please Enter the Mobile Number"
+            mobileNumber.error = "Please enter the Mobile Number"
             mobileNumber.requestFocus()
             isValid = false
+        }
+        else{
+            isValid=true
         }
         if (!Patterns.PHONE.matcher(mobileNumber.text.toString()).matches()) {
-            mobileNumber.error = "Please Enter valid Mobile Number"
+            mobileNumber.error = "Please enter valid Mobile Number"
             mobileNumber.requestFocus()
             isValid = false
         }
+        else{
+            isValid=true
+        }
         if (password.text.toString().isEmpty()) {
-            password.error = "Please Enter confirmation password"
+            password.error = "Please enter Password"
             password.requestFocus()
             isValid = false
+        }
+        else{
+            isValid=true
         }
         if (isValid) {
             val intent: Intent = intent
